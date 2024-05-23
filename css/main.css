@@ -1,0 +1,242 @@
+body {
+    /* margen predeterminado de las páginas web. Hay que cambiarlo para moverlo a nuestro gusto */
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx NAVEGACIÓN xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+header div{
+    width: 100%;
+    height: 55px;
+    background-color: #dadce0;
+}
+
+header nav{
+    display: flex;
+    /* mover el nav hacia la derecha con flex-end */
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /* Eliminar vinetas */
+    list-style: none;
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 31px;
+    padding-left: 2px;
+}
+
+nav .nav-right-section a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .87);
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://ssl.gstatic.com/gb/images/bar/al-icon.png);
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+
+nav .nav-right-section .menu:hover{
+    box-shadow: 1px 1px 1px 9px #a7afbd2d inset, 1px 1px 1px 9px #a7afbd2f;
+    border-radius: 100%;
+}
+
+nav .nav-right-section img{
+    margin-right: 15px;
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+}
+
+nav .nav-right-section img:hover{
+    box-shadow: 1px 1px 1px 4px #a7afbd33
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MAIN CONTENIDO PRINCIPAL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+main{
+    margin-top: 8px;
+    /* centrar elementos */
+    text-align: center;
+}
+
+main .main-logo{
+    width: 272;
+    /* propiedad valor 1 y 2. Propiedad: vertical, horizontal */
+    height: 92;
+    /* para centrar mi elemento */
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    width: 272;
+    height: 92;
+    margin-bottom: 24px;
+}
+
+/* IMPUT SECTION O PARTE DEL BUSCADOR, BARRA DE NAVEGACION */
+main .main-input{
+    width: 584px;
+    margin: 0 auto;
+}
+
+main .main-input-container{
+width: 584px;
+height: 43px;
+/* Borde de color 1. anchura, 2. estilo, 3. color */
+border: 0.5px solid #dfe1e5;  
+border-radius: 30px;
+}
+
+main .main-input input{
+    height: 40px;
+    border: none;
+    outline: none; 
+    width: 400px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+main .main-input .search-icon{
+background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+background-position: center;
+background-size: contain;
+padding-left: 6%;
+background-repeat: no-repeat;
+width: 25px;
+height: 25px;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 100px;
+    height: 100 px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0px 15px;
+    padding-block: 3px;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    padding: 0 15px;
+    padding-block: 1px;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px #a7afbd;
+    border-color: #dfe1e500;  
+}
+
+/* SECCCIÓN BOTONES */
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+main .main-buttons div{
+    /* alinear */
+    display: inline;
+}
+
+main .main-buttons button{
+    /* separación entre buscador y botones */
+    margin-top: 88px;
+    border: none;
+    height: 40px;
+    background-color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 0 16px; 
+    margin: 11px 4px;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    border: 1px solid #dadce0;
+    /* sombra */
+    box-shadow: 0 1px 1px 1px #dadce0
+}
+
+.espacio{
+width: 100%;
+height: 229px;
+}
+
+div.mexico{
+    display: flex;
+    max-width: 100%;
+    height: 46px;
+    background-color: #ecedee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:  14px;
+    color: #202124;
+    padding: 0px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+footer {
+    height: 46px;
+    width: 100%;
+    display: flex;
+    background-color: #ecedee;
+    text-align: center;
+}
+
+footer .footer-right{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    width: 60%;
+    margin-right: 80px;
+}
+
+footer .footer-right a{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:  15px;
+    color: #202124;
+    text-decoration: none;
+    justify-content: flex-start;
+    padding: 0px 15px;
+}
+
+footer .footer-left{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+    width: 40%;
+}
+
+footer .footer-left a{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15 px;
+    color: #202124;
+    text-decoration: none;
+    padding: 0px 15px;
+    justify-content: flex-end;
+}
+
